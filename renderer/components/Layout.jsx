@@ -11,7 +11,10 @@ import {
 export default function Layout({ children }) {
   return (
     <>
+      {/*
+      Removed NavBar bcz its not needed may be it may be used in the future
       <Navbar />
+     */}
       <hr />
       {children}
       <hr />
