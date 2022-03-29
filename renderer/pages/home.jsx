@@ -1,18 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import {
-  Alert,
-  AlertIcon,
-  AlertTitle,
-  AlertDescription,
-  ChakraProvider,
-} from '@chakra-ui/react'
+
+import { Alert, AlertIcon } from '@chakra-ui/react'
 function Home() {
   return (
-    <ChakraProvider>
+    <>
       <Head>
-        <title>Home - Nextron (with-javascript)</title>
+        <title>Home - Nextron (with-javascript) ⚡</title>
       </Head>
       <div>
         <p>
@@ -28,21 +23,8 @@ function Home() {
         <AlertIcon />
         Data uploaded to the server. Fire on! hhh
       </Alert>
-    </ChakraProvider>
+    </>
   )
 }
 
 export default Home
-/*
-import { ChakraProvider } from '@chakra-ui/react'
-
-function MyApp({ Component, pageProps }) {
-  return (
-    <ChakraProvider>
-      <Component {...pageProps} />
-    </ChakraProvider>
-  )
-}
-
-export default MyApp
-*/
