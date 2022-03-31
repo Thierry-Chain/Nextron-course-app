@@ -1,4 +1,4 @@
-import { app, ipcMain, dialog } from 'electron'
+import { app, ipcMain, dialog, Notification } from 'electron'
 import serve from 'electron-serve'
 import { createWindow } from './helpers'
 
@@ -32,5 +32,10 @@ app.on('window-all-closed', () => {
 })
 
 ipcMain.on('notify', (e, parms) => {
+  const notify = new Notification({
+    title: 'Error',
+    body: 'Invalid credential',
+  })
+  notify.show()
   dialog.showErrorBox(`Oops !`, parms)
 })
