@@ -71,7 +71,7 @@ function Home() {
           </FormControl>
 
           <Button onClick={handleSubmit} colorScheme='teal'>
-            Button
+            Login
           </Button>
         </VStack>
       </Container>
